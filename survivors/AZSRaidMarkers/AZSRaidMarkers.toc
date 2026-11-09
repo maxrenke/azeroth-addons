@@ -1,0 +1,6 @@
+## Interface: 11200
+## Title: AZS Raid Markers
+## Notes: Raid target icons over bosses (cross), the final boss (skull) and guardians (diamond). /azrm for options.
+## Version: 1.0.0
+## SavedVariables: AZSRaidMarkersDB
+AZSRaidMarkers.lua

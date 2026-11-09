@@ -1,0 +1,6 @@
+## Interface: 11200
+## Title: AZS Gold Sound
+## Notes: Plays gold.wav from this folder (bring your own) whenever your gold goes up. /azgold for options.
+## Version: 1.0.0
+## SavedVariables: AZSGoldSoundDB
+AZSGoldSound.lua

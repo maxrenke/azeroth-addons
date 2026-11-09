@@ -1,0 +1,8 @@
+## Interface: 11200
+## Title: HoA Blackwell Skin
+## Notes: Reskins Hordes of Azeroth's bottom hero bar in BlackwellUI's style. /hoaskin for options.
+## Version: 1.0.0
+## Dependencies: HordesOfAzeroth
+## OptionalDeps: BlackwellUI
+## SavedVariables: HoABlackwellSkinDB
+HoABlackwellSkin.lua

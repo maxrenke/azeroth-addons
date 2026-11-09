@@ -1,0 +1,6 @@
+## Interface: 11200
+## Title: AZS Cache Arrow
+## Notes: A TomTom-style arrow to the nearest cache. Drag it to move. /azca for options.
+## Version: 1.0.0
+## SavedVariables: AZSCacheArrowDB
+AZSCacheArrow.lua

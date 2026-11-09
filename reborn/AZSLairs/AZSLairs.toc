@@ -1,0 +1,7 @@
+## Interface: 30300
+## Title: AZS Lairs
+## Notes: A small window with every guardian lair: its guardian's health and power, or when it fills again. /azlair for options.
+## Version: 1.0.0
+## SavedVariables: AZSLairsDB
+AZSLairs.lua
+AZSLairMarkers.lua

@@ -1,0 +1,7 @@
+## Interface: 11200
+## Title: HoA Arrows
+## Notes: Arrows on screen to the nearest chest, shrine, event, miniboss, boss and vendor in Hordes of Azeroth. /hoaarrow for options.
+## Version: 1.0.0
+## Dependencies: HordesOfAzeroth
+## SavedVariables: HoAChestArrowDB
+HoAChestArrow.lua

@@ -1,0 +1,6 @@
+## Interface: 30300
+## Title: AZS Debuff Watch
+## Notes: Shows your watched debuffs on the boss or guardian you fight, and warns when one is missing or about to fall off. /azdw for options.
+## Version: 1.0.0
+## SavedVariables: AZSDebuffWatchDB
+AZSDebuffWatch.lua

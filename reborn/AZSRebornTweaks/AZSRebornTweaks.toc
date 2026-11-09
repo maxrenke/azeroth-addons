@@ -1,0 +1,7 @@
+## Interface: 30300
+## Title: AZS Reborn Tweaks
+## Notes: Hides Reborn's own player, target and boss bar, and shows the boss bar in BlackwellUI's style. /azbar for options.
+## Version: 1.0.0
+## OptionalDeps: AzerothSurvivorsUI, BlackwellUI, AzerothSurvivors
+## SavedVariables: AZSRebornTweaksDB
+AZSRebornTweaks.lua
