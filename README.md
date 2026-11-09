@@ -74,16 +74,19 @@ skin works around them:
   own frame behind instead of on the frame itself.
 - Additive textures ignore alpha. The skin switches them to normal blending before hiding them.
 - The `HIGHLIGHT` layer is drawn all the time, not only on mouse-over, and can't be hidden afterwards.
-  The hero bar's slot highlight greys every icon. The skin can't remove it; to fix it, delete these four
-  lines in `HordesOfAzeroth\VanillaBonkHeroBar.lua` (`CreateSlot`). A Hordes update puts them back.
+  The hero bar's slot highlight greys every icon, and the skin can't remove it. Run
+  [`tools/Repair-HordesHeroBar.ps1`](tools/Repair-HordesHeroBar.ps1) once to take the four highlight
+  lines out of `HordesOfAzeroth\VanillaBonkHeroBar.lua`, and again after every Hordes update (an update
+  puts them back). It keeps a `.bak`, does nothing when the lines are already gone, and stops without
+  changes if Hordes changed that part of the file. `/reload` afterwards.
 
-  ```lua
-  slot.highlight = slot:CreateTexture(nil, "HIGHLIGHT")
-  slot.highlight:SetTexture("Interface\\Buttons\\ButtonHilight-Square")
-  slot.highlight:SetBlendMode("ADD")
-  slot.highlight:SetAllPoints(slot)
+  ```powershell
+  .\Repair-HordesHeroBar.ps1                     # C:\Games\Hordes of Azeroth
+  .\Repair-HordesHeroBar.ps1 -GamePath 'D:\Games\Hordes of Azeroth'
+  .\Repair-HordesHeroBar.ps1 -WhatIf             # show what it would do
   ```
 
+  An addon can't do this: by the time any addon runs, Hordes has already made the highlight.
 - The cooldown sweep model draws as a grey wash, so the skin hides it (`/hoaskin sweep` keeps it).
 
 `/hoaskin dump` writes every visible texture on the hero bar to the saved variables, which helps
